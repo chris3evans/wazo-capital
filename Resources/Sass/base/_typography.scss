@@ -2,3 +2,35 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+.primary__heading {
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  display: inline-block;
+  flex: 0 0 90%;
+
+  color: white;
+
+  animation-name: fadeInRight;
+  animation-duration: 0.7s;
+}
+
+.secondary__heading {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: white;
+
+  &--span {
+    background-image: linear-gradient(
+      to top,
+      $color-dark-blue-2,
+      $color-primary-blue
+    );
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+  }
+}

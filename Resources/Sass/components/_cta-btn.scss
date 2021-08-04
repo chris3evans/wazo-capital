@@ -1,0 +1,24 @@
+.cta-btn {
+  border: none;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  color: black;
+  padding: 1.5rem 3.5rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 2rem 2rem rgba(black, 0.4);
+    background-color: $color-primary-blue;
+    color: white;
+  }
+
+  &:active {
+    transform: translateY(0rem);
+    box-shadow: none;
+  }
+}
