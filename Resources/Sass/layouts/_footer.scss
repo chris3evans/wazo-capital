@@ -1,0 +1,120 @@
+.section-footer {
+  background-color: $color-dark-grey-2;
+  height: 25rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.footer__container {
+  border: $color-dark-grey-1 solid 0.1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  color: $color-light-grey-2;
+}
+
+.links {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    /*margin: 3rem 0rem;*/
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &:not(:last-of-type) {
+      margin-right: 10rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-light-grey-2;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: all 0.4s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-light-blue-2;
+    transform: translateY(-0.3rem);
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.8);
+  }
+}
+
+.socials {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &:not(:last-of-type) {
+      margin-right: 6rem;
+    }
+
+    &-icon {
+      fill: $color-light-grey-2;
+      height: 3.5rem;
+      width: 3.5rem;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+  }
+}
+
+#facebook-icon:hover {
+  fill: $color-facebook;
+  @include moveOut;
+}
+
+#twitter-icon:hover {
+  fill: $color-twitter;
+  @include moveOut;
+}
+
+#instagram-icon:hover {
+  fill: $color-instagram;
+  @include moveOut;
+}
+
+#google-icon:hover {
+  fill: $color-google;
+  @include moveOut;
+}
+
+#linkedin-icon:hover {
+  fill: $color-linkedin;
+  @include moveOut;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin-top: 3rem;*/
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+  }
+}

@@ -1,3 +1,4 @@
+@import "abstract/mixins";
 @import "abstract/variables";
 
 @import "base/animations";
@@ -11,6 +12,7 @@
 
 @import "layouts/about-us";
 @import "layouts/contact";
+@import "layouts/footer";
 @import "layouts/hero-banner";
 @import "layouts/how-works";
 @import "layouts/review";
