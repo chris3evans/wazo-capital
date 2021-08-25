@@ -1,9 +1,8 @@
 .section-footer {
   background-color: $color-dark-grey-2;
   height: 25rem;
-  padding: 2rem;
   display: flex;
-  width: 100vw;
+  width: 100%;
 
   @include respond(phone) {
     height: auto;
@@ -11,7 +10,6 @@
 }
 
 .footer__container {
-  border: $color-dark-grey-1 solid 0.1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -27,6 +25,8 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
 
     @include respond(phone) {
       display: block;
@@ -38,8 +38,6 @@
     list-style-type: none;
 
     &:not(:last-of-type) {
-      margin-right: 10rem;
-
       @include respond(phone) {
         margin-right: 0rem;
         margin-bottom: 0.5rem;

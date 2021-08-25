@@ -1297,11 +1297,10 @@ body {
 .section-footer {
   background-color: #484848;
   height: 25rem;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (max-width: 37.5em) {
@@ -1311,7 +1310,6 @@ body {
 }
 
 .footer__container {
-  border: #6c6c6c solid 0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1340,6 +1338,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
 }
 
 @media (max-width: 37.5em) {
@@ -1351,10 +1353,6 @@ body {
 
 .links__item {
   list-style-type: none;
-}
-
-.links__item:not(:last-of-type) {
-  margin-right: 10rem;
 }
 
 @media (max-width: 37.5em) {
