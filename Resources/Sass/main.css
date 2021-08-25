@@ -130,6 +130,18 @@ body {
   text-align: center;
 }
 
+@media (max-width: 75rem) {
+  .secondary__heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .secondary__heading {
+    font-size: 3rem;
+  }
+}
+
 .secondary__heading--span {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#005eb0), to(#008cf0));
   background-image: linear-gradient(to top, #005eb0, #008cf0);

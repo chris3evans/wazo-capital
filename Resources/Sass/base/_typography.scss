@@ -36,6 +36,13 @@ body {
   color: white;
   text-align: center;
 
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+
   &--span {
     background-image: linear-gradient(
       to top,
