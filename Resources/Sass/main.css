@@ -1357,8 +1357,15 @@ body {
   margin-right: 10rem;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 37.5em) {
   .links__item:not(:last-of-type) {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .links__item {
     margin-right: 5rem;
     text-align: center;
     display: -webkit-box;
@@ -1367,13 +1374,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .links__item:not(:last-of-type) {
-    margin-right: 0rem;
-    margin-bottom: 0.5rem;
   }
 }
 

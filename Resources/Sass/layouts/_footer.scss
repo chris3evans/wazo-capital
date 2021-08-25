@@ -40,19 +40,18 @@
     &:not(:last-of-type) {
       margin-right: 10rem;
 
-      @include respond(tab-port) {
-        margin-right: 5rem;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-      }
-
       @include respond(phone) {
         margin-right: 0rem;
         margin-bottom: 0.5rem;
       }
     }
 
+    @include respond(tab-land) {
+      margin-right: 5rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
     @include respond(phone) {
       display: flex;
       justify-content: center;
