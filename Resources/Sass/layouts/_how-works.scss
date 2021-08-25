@@ -5,4 +5,8 @@
     $color-light-blue-1
   );
   padding: 5rem;
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
 }

@@ -1,3 +1,36 @@
 @mixin moveOut {
   transform: scale(1.15) translateY(-0.2rem);
 }
+
+/*
+600px = 600/16 = 37.5em
+900px = 900/16 = 56.25em
+1200px = 1200/16 = 75em
+1800px+ = 1800/16 = 112.5em
+*/
+
+@mixin respond($screen-size) {
+  @if $screen-size == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $screen-size == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $screen-size == tab-land {
+    @media (max-width: 75rem) {
+      @content;
+    }
+  }
+
+  @if $screen-size == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

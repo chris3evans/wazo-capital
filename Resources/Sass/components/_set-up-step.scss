@@ -1,4 +1,6 @@
 .steps-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .step {
@@ -7,8 +9,32 @@
   height: 20rem;
   width: 75%;
 
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: skewX(10deg);
+    background-image: linear-gradient(
+      to bottom right,
+      $color-light-grey-1,
+      $color-light-grey-2
+    );
+    box-shadow: 0rem 2rem 3rem rgba(black, 0.3);
+    margin-left: -7.5rem;
+    margin-right: -7.5rem;
+    height: 100%;
+    z-index: 1;
+    flex: 1;
+
+    @include respond(tab-port) {
+      transform: skewX(0deg);
+      height: auto;
+    }
+  }
+
   &--left {
     justify-content: flex-end;
+
     .step__image {
       z-index: 2;
 
@@ -16,30 +42,29 @@
       &--3 {
         height: 20rem;
         width: 20rem;
-      }
-    }
 
-    .step__content-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transform: skewX(10deg);
-      background-image: linear-gradient(
-        to bottom right,
-        $color-light-grey-1,
-        $color-light-grey-2
-      );
-      box-shadow: 0rem 2rem 3rem rgba(black, 0.3);
-      margin-left: -6.5rem;
-      height: 15rem;
-      z-index: 1;
-      flex: 1;
+        @include respond(tab-port) {
+          height: 17rem;
+          width: 17rem;
+        }
+
+        @include respond(phone) {
+          height: 5.5rem;
+          width: 5.5rem;
+
+          margin-bottom: 13rem;
+        }
+      }
     }
 
     .step__content {
       transform: skewX(-10deg);
       margin-left: 7rem;
       padding: 0.5rem;
+
+      @include respond(tab-port) {
+        transform: skewX(0deg);
+      }
     }
 
     .step__text {
@@ -47,6 +72,12 @@
       padding: 0.5rem;
       color: black;
       font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        font-weight: 500;
+        line-height: 2rem;
+        letter-spacing: 0.05rem;
+      }
     }
   }
 
@@ -59,31 +90,30 @@
       &--2 {
         height: 20rem;
         width: 20rem;
-      }
-    }
 
-    .step__content-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transform: skewX(10deg);
-      background-image: linear-gradient(
-        to bottom right,
-        $color-light-grey-1,
-        $color-light-grey-2
-      );
-      box-shadow: 0rem 2rem 3rem rgba(black, 0.3);
-      margin-right: -6.5rem;
-      height: 15rem;
-      z-index: 1;
-      flex: 1;
+        @include respond(tab-port) {
+          height: 17rem;
+          width: 17rem;
+        }
+
+        @include respond(phone) {
+          height: 5.5rem;
+          width: 5.5rem;
+
+          margin-bottom: 12rem;
+        }
+      }
     }
 
     .step__content {
       transform: skewX(-10deg);
-      margin-right: 5.5rem;
+      margin-right: 7rem;
       margin-left: 2rem;
       padding: 0.5rem;
+
+      @include respond(tab-port) {
+        transform: skewX(0deg);
+      }
     }
 
     .step__text {
@@ -91,6 +121,12 @@
       padding: 0.5rem;
       color: black;
       font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        font-weight: 500;
+        line-height: 2rem;
+        letter-spacing: 0.05rem;
+      }
     }
   }
 }

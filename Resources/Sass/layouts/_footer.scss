@@ -3,6 +3,11 @@
   height: 25rem;
   padding: 2rem;
   display: flex;
+  width: 100vw;
+
+  @include respond(phone) {
+    height: auto;
+  }
 }
 
 .footer__container {
@@ -22,7 +27,11 @@
 
   &__list {
     display: flex;
-    /*margin: 3rem 0rem;*/
+
+    @include respond(phone) {
+      display: block;
+      padding: 1rem;
+    }
   }
 
   &__item {
@@ -30,6 +39,23 @@
 
     &:not(:last-of-type) {
       margin-right: 10rem;
+
+      @include respond(tab-port) {
+        margin-right: 5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      @include respond(phone) {
+        margin-right: 0rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -56,6 +82,10 @@
   &__container {
     display: flex;
     justify-content: center;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
   }
 
   &__list {
@@ -109,6 +139,10 @@
   justify-content: center;
   align-items: center;
   /*margin-top: 3rem;*/
+
+  @include respond(phone) {
+    margin-bottom: 1rem;
+  }
 
   &__text {
     font-size: 1.4rem;
