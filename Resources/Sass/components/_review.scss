@@ -69,6 +69,10 @@
     box-shadow: 0 1rem 2rem rgba(black, 0.1);
     padding: 4rem;
 
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
     &-text {
       font-size: 1.6rem;
       margin-bottom: 0.5rem;
@@ -153,7 +157,7 @@
   }
 
   &__person {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -175,8 +179,9 @@
       line-height: 6rem;
     }
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 400;
+      line-height: 3.2rem;
     }
   }
 
@@ -202,7 +207,7 @@
       margin: 4rem 0rem;
     }
     @include respond(phone) {
-      margin: 3rem 0rem;
+      margin: 3rem 1rem;
     }
   }
 

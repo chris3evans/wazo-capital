@@ -16,6 +16,10 @@
     justify-content: center;
     flex: 0 0 35%;
     background-color: white;
+
+    @include respond(phone) {
+      flex: 0 0 28%;
+    }
   }
 
   &__form {
@@ -113,7 +117,7 @@
       }
     }
     @include respond(phone) {
-      left: 10rem;
+      left: 6rem;
     }
   }
 
@@ -135,7 +139,8 @@
       color: transparent;
     }
     @include respond(phone) {
-      right: 10rem;
+      right: 3rem;
+      top: 66rem;
     }
   }
 }

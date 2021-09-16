@@ -35,6 +35,11 @@
   &--left {
     justify-content: flex-end;
 
+    @include respond(phone) {
+      margin-bottom: 14rem;
+      margin-left: 2rem;
+    }
+
     .step__image {
       z-index: 2;
 
@@ -84,6 +89,12 @@
   &--right {
     margin-right: 0%;
     margin-left: auto;
+
+    @include respond(phone) {
+      margin-right: 2rem;
+      margin-bottom: 15rem;
+    }
+
     .step__image {
       z-index: 2;
 

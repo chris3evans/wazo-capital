@@ -37,11 +37,9 @@
   &__item {
     list-style-type: none;
 
-    &:not(:last-of-type) {
-      @include respond(phone) {
-        margin-right: 0rem;
-        margin-bottom: 0.5rem;
-      }
+    @include respond(phone) {
+      margin-right: 0rem;
+      margin-bottom: 0.5rem;
     }
 
     @include respond(tab-land) {
@@ -94,6 +92,10 @@
 
     &:not(:last-of-type) {
       margin-right: 6rem;
+
+      @include respond(phone) {
+        margin-right: 4rem;
+      }
     }
 
     &-icon {

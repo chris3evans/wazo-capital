@@ -54,7 +54,7 @@ html {
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
@@ -328,6 +328,11 @@ body {
           justify-content: center;
 }
 
+.white-gradient-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
+  background-image: linear-gradient(to bottom, white, #eeeeee);
+}
+
 .cta-btn {
   border: none;
   background-color: white;
@@ -472,6 +477,12 @@ body {
   padding: 4rem;
 }
 
+@media (max-width: 37.5em) {
+  .testimonial__details {
+    padding: 2rem;
+  }
+}
+
 .testimonial__details-text {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
@@ -574,7 +585,7 @@ body {
 }
 
 .review__person {
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -604,8 +615,9 @@ body {
 
 @media (max-width: 37.5em) {
   .review__text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
+    line-height: 3.2rem;
   }
 }
 
@@ -654,7 +666,7 @@ body {
 
 @media (max-width: 37.5em) {
   .review__list-container {
-    margin: 3rem 0rem;
+    margin: 3rem 1rem;
   }
 }
 
@@ -797,6 +809,13 @@ body {
           justify-content: flex-end;
 }
 
+@media (max-width: 37.5em) {
+  .step--left {
+    margin-bottom: 14rem;
+    margin-left: 2rem;
+  }
+}
+
 .step--left .step__image {
   z-index: 2;
 }
@@ -853,6 +872,13 @@ body {
 .step--right {
   margin-right: 0%;
   margin-left: auto;
+}
+
+@media (max-width: 37.5em) {
+  .step--right {
+    margin-right: 2rem;
+    margin-bottom: 15rem;
+  }
 }
 
 .step--right .step__image {
@@ -1094,6 +1120,14 @@ body {
   background-color: white;
 }
 
+@media (max-width: 37.5em) {
+  .contact__banner {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+            flex: 0 0 28%;
+  }
+}
+
 .contact__form {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 65%;
@@ -1229,7 +1263,7 @@ body {
 
 @media (max-width: 37.5em) {
   .contact__phone {
-    left: 10rem;
+    left: 6rem;
   }
 }
 
@@ -1252,7 +1286,8 @@ body {
 
 @media (max-width: 37.5em) {
   .contact__message {
-    right: 10rem;
+    right: 3rem;
+    top: 66rem;
   }
 }
 
@@ -1356,7 +1391,7 @@ body {
 }
 
 @media (max-width: 37.5em) {
-  .links__item:not(:last-of-type) {
+  .links__item {
     margin-right: 0rem;
     margin-bottom: 0.5rem;
   }
@@ -1434,6 +1469,12 @@ body {
   margin-right: 6rem;
 }
 
+@media (max-width: 37.5em) {
+  .socials__item:not(:last-of-type) {
+    margin-right: 4rem;
+  }
+}
+
 .socials__item-icon {
   fill: #eeeeee;
   height: 3.5rem;
@@ -1500,6 +1541,53 @@ body {
   font-size: 1.8rem;
 }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-1-of-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - 6rem) / 2);
+          flex: 0 0 calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+          flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+}
+
+.col-2-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+}
+
+.col-1-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+          flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+}
+
+.col-2-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+}
+
+.col-3-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+          flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+}
+
 .hero__banner {
   height: 95vh;
   display: -webkit-box;
@@ -1528,8 +1616,8 @@ body {
           align-items: center;
   position: absolute;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 140, 240, 0.7)), to(rgba(80, 217, 255, 0.7))), url("../../../Resources/Images/hero-image.png");
-  background-image: linear-gradient(to bottom, rgba(0, 140, 240, 0.7), rgba(80, 217, 255, 0.7)), url("../../../Resources/Images/hero-image.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 140, 240, 0.7)), to(rgba(80, 217, 255, 0.7))), url("../Images/hero-image.png");
+  background-image: linear-gradient(to bottom, rgba(0, 140, 240, 0.7), rgba(80, 217, 255, 0.7)), url("../Images/hero-image.png");
   background-size: cover;
   background-position: top;
   background-blend-mode: screen;
