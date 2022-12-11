@@ -7,12 +7,6 @@
 }
 
 html {
-  // (phone) 1rem = 8px = 8/16 = 50%
-  // (tab-land) 1rem = 8px 8/16 = 50%
-  // (tab-port) 1rem = 9px 9/16 = 56.25%
-  // Font-size: 1rem = 10px (main)
-  // (large-desktop) = 12px 12/16 = 75%
-
   font-size: 62.5%;
 
   @include respond(phone) {
